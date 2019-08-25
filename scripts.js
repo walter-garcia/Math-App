@@ -5,9 +5,6 @@ function multiply() {
 
   if (multiply1.value == "" || multiply2.value == "") {
     result.innerHTML = "Woops...Seems like you forgot to type a number!";
-    $("#multiplyModal").on("hidden.bs.modal", function() {
-      $("#multiply1").focus();
-    });
   } else {
     let multiply1Value = Number(multiply1.value);
     let multiply2Value = Number(multiply2.value);
